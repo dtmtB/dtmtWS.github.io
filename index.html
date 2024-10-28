@@ -8,10 +8,12 @@
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32">
 		<!-- 		<link rel="icon" href="i/favicon.png" type="image/x-icon"> -->
 				<!-- jQuery 3.3.1 -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		
 		
 		<!-- Google Fonts -->
-				<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,600,500,700,800,900|Nunito:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
+			 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,600,500,700,800,900|Nunito:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,600,500,700,800,900|PT+Sans+Narrow:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
+				
 		<!-- Bootstrap 5.3.3 -->
 			<!-- BS css -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -24,6 +26,8 @@
 		<!-- AOS 2.3.1 jQuery plugin CSS (Animations) -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		
+		 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+		
 		<!-- Datamato CSS (Styles for all blocks) -->
 		<link href="css/style.css" rel="stylesheet" /> 
 		
@@ -33,12 +37,12 @@
 <body data-aos-easing="ease-out-cubic" data-aos-duration="400" data-aos-delay="0">
 <!-- Navigation Mobile type 2 -->
 <!-- NAVBAR header  -->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
+	  
       <a class="navbar-brand"  href="#">
-        <img src="images/dmlogo.png"
- alt="Logo" width="150" height="24" class="d-inline-block align-text-top">
-    
+        <img src="images/dmlogo.png" alt="Logo" width="150" height="24" class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -83,7 +87,7 @@
 <!-- NAbBAR header ends -->
 <header class="mt-5">
 <!-- carousel  jumbotron -->
-<div id="headerSlider" class="carousel slide"> <!--data-bs-ride="carousel"> -->
+<div id="headerSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" >
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
     <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
@@ -93,77 +97,135 @@
   <div class="carousel-inner headerSliderHeight">
     <!-- slide 1 -->
     <div class="carousel-item active" style="min-height:100%;height:100%;">
-		<svg width="100%" height="100%" class="headerSliderHeight">
-		  <defs>
-			<linearGradient id="material-ui-gradient-0">
-			  <stop offset="0%" stop-color="#01100b"></stop>
-			  <stop offset="100%" stop-color="#01100b"></stop>
-			</linearGradient>
-		  </defs>
-		  <rect width="100%" height="100%" fill="url(#material-ui-gradient-0)"></rect>
-		</svg>
-
-      <!-- <img src="..." class="d-block w-100" alt="...">  -->
-      <div class="sliderTextTop">
-        <h1 class="big">First slide label</h1>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+		<div class="headerSliderHeight" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;max-height: 100%;">
+<div class="card-overlay" style="    position: absolute;
+    left: 0; top: 0; width: 100%; height: 100%; 
+	background-image: linear-gradient(to top right, #000000 50%, #d79b1370 78%), url(images/bgFuture_1.png);
+	background-size: cover;  background-position: bottom;  background-repeat: no-repeat;">
+  
+		<div class="sliderTextTop">
+			<div class="" style="">
+				<p class="subHL pb-1" style="text-transform: none;">Business growth with responsibility</p>
+				<h1 class="big">Driving digital transformation & sustainability</h1>
+			</div>
+		</div>
+		
+		<!-- FLOATING PRODUCTS CARDS here -->
+		<!-- card 1 DevOps -->
+		<div class="row headerCardRow cardDevSec" >
+				<div class="card headerCard ">
+					 <div style="position:relative;">
+						 <img src="images/bgBrown.png" class="card-img-top" alt="Just">  
+						 <h5 class="card-title cardTitleOnImage" style="">DevSecOps</h5>
+					  </div>
+					  <div class="card-body">	  
+						<h5 class="card-title">Secured & optimzied automation</h5>
+						<!-- <p class="card-text">360&deg; of secured DevOps.</p> -->
+					  </div>
+				</div>
+		</div>
+		<!-- card 2 Development -->
+		<div class="row  headerCardRow cardDev">
+				<div class="card headerCard">
+					 <div style="position:relative;">
+						 <img src="images/bgBlue.png" class="card-img-top" alt="Just">  
+						 <h5 class="card-title cardTitleOnImage" style="">Development</h5>
+					  </div>
+					  <div class="card-body">	  
+						<h5 class="card-title">Code only business</h5>
+						<!--<p class="card-text">All build & integrated - CI/CD, JWT, OAuth, notifications, ticketing.</p> -->
+					  </div>
+				</div>
+				
+		</div>
+		<!-- card 3 Sustainability -->
+		<div class="row  headerCardRow cardSus">
+				<div class="card headerCard">
+					 <div style="position:relative;">
+						 <img src="images/bgGreen1.png" class="card-img-top" alt="Just">  
+						 <h5 class="card-title cardTitleOnImage" style="">Sustainability</h5>
+					  </div>
+					  <div class="card-body">	  
+						<h5 class="card-title">Net Zero and ESG Reporting </h5>
+						<!-- <p class="card-text">Single platform to track & report all emission produced.</p> -->
+						
+					  </div>
+				</div>
+				
+		</div>
+		
+</div></div>
+	 
     </div>
     <!-- slide 2 -->
-    <div class="carousel-item" style="min-height:100%;height:100%;">
-		<svg width="100%" height="100%" class="headerSliderHeight">
-		  <defs>
-			<linearGradient id="dark-gradient">
-			  <stop offset="0%" stop-color="#001E00" />
-		  <stop offset="90%" stop-color="#113611" />
-		  <stop offset="100%" stop-color="#113611" />
-			</linearGradient>
-		  </defs>
-		  <rect width="100%" height="100%" fill="url(#dark-gradient)" />
-		</svg>
+	
+    <div class="carousel-item" style="min-height:100%;height:100%;position:relative;">
+	
+      <!--   <div class="sliderTextTop"> -->
+	<div class="headerSliderHeight" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;max-height: 100%;">
+<div class="card-overlay" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+			        background-image: linear-gradient(to top right, #000000e8 44%, #000000bd 64%, #033b6324), url(images/DevOpsGenerated.jpeg);;
+  background-size: cover; background-position: center;">
+				<div class="contentBox bottomHeight " style="color:white;position: absolute; left: 10%; text-align:left;">
+				  <div class="card-block">
+				  <h1 class="big mb-4">DevSecOps</h1>
+					<p class="subHL">You only plan. We do rest.</p>
+					  <!-- <p class="subHL">Datamato - most trusted partner.</p> -->
+					  <p class="mt-4">Big cloud provider, telecom, banking & other high demanding industries trust us for their digital transformation.</p><p class="hide">Our <b>360 DevSecOps</b> provides the industry's most comprehensive coverage from requirements to the most secured and efficient CI/CD pipelines. 
+					  </p>
+					  <p class="mt-2" style="font-weight:bold;">Whether it's Gitlab, IBM DevOps or any other leading DevOps product, we have you covered. </p>
+				 </div>
+			  </div>
+			</div> <!-- card overlay -->
 
-      <!-- <img src="..." class="d-block w-100" alt="...">  -->
-      <div class="sliderTextTop">
-        <h1 class="big">Second slide label</h1>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+		</div>
+
+	
     </div>
 	 <!-- slide 3 -->
     <div class="carousel-item" style="min-height:100%;height:100%;">
-		<svg width="100%" height="100%" class="headerSliderHeight">
-		  <defs>
-			<linearGradient id="material-ui-gradient-3">
-			  <stop offset="0%" stop-color="#3F51B5"></stop>
-			  <stop offset="100%" stop-color="#9C27B0"></stop>
-			</linearGradient>
-		  </defs>
-		  <rect width="100%" height="100%" fill="url(#material-ui-gradient-3)"></rect>
-		</svg>
+			<div class="headerSliderHeight" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;max-height: 100%;">
+			<div class="card-overlay" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+								   background-image: linear-gradient(to top right, #01284b 44%, #71328b73 64%, #9c27b03d), url(images/integratedCar.png);
+			  background-size: cover; background-position: center;">
+							<div class="contentBox bottomHeight " style="color:white;position: absolute; left: 10%; text-align:left;">
+							  <div class="card-block">
+							  <h1 class="big mb-3">Integrated Development</h1>
+								  <p class="subHL">Rediscover the joy of PURE coding.</p>
+								  <p class="mt-3">Just code your business logic on our <b>Application Enterprise Framework</b>. 
+								  </p>
+								  <p class="mt-1"> Git SCM, Gitlab DevOps & CI/CD pipelines, security, vulnerability scanning, tokens, OAuth, notifications and ticketing integrations <b>all built in</b>.  
+					</p>
+							 </div>
+						  </div>
+						</div> <!-- card overlay -->
 
-      <!-- <img src="..." class="d-block w-100" alt="...">  -->
-     <div class="sliderTextTop">
-        <h1 class="big">Third slide label</h1>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+			</div>
+     
     </div>
 	
 	 <!-- slide 4 -->
+	
     <div class="carousel-item" style="min-height:100%;height:100%;">
-		<svg width="100%" height="100%" class="headerSliderHeight">
-		  <defs>
-			<linearGradient id="deep-purple-to-pink-gradient">
-			  <stop offset="0%" stop-color="#673AB7"></stop>
-			  <stop offset="100%" stop-color="#E91E63"></stop>
-			</linearGradient>
-		  </defs>
-		  <rect width="100%" height="100%" fill="url(#deep-purple-to-pink-gradient)"></rect>
-		</svg>
+	
+	<div class="headerSliderHeight" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;max-height: 100%;">
+			<div class="card-overlay" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+								   background-image: linear-gradient(to top right, #01284b 44%, #71328b73 64%, #9c27b03d), url(images/bgSustainability.png);
+			  background-size: cover; background-position: center;">
+							<div class="contentBox bottomHeight " style="color:white;position: absolute; left: 10%; ext-align:left;">
+							  <div class="card-block">
+							  <h1 class="big mb-4">Sustainability simplified.</h1>
+								  <p class="subHL">One dashboard to capture all emissions.</p>
+								  
+								  <p class="mt-3"> Meet the regulatory emission goals with a <span style="font-weight:700;">single technology platform</span> to capture and report CO2 footprint of every emission producing entities like data centers, facilities and assets.
+									</p>
+							 </div>
+						  </div>
+						</div> <!-- card overlay -->
 
-      <!-- <img src="..." class="d-block w-100" alt="...">  -->
-      <div class="sliderTextTop">
-        <h1 class="big">Fourth slide label</h1>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+			</div>
+		
+
     </div>
 	
   </div>
@@ -178,21 +240,531 @@
 </div>
 </header>
 
+<!-- our edge -->
+	<section class="" style="min-height:350px;background-color: #fbf5f54f;">
+		<!-- By pradeep mt-5 to mt-0  -->
+		<div class="container sectionMargins">
+			<div class="row d_content_section ">
+				<div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+					<p class="subHL subHLSmall dtmtGray mb-2" >The Unique Edge</p>
+					<h1 class="big mb-4">Making IT Simple</h1>
+					<p class="body" style="color: #4f4f4f;font-size:22px;">
+					We are commited to make enterprises efficient, secured, reliable, value focused and <span class="dtmtGreen">greener</span>. </p><p class="body" style="color: #4f4f4f;font-size:22px;"> Our <span class="dtmtBlue">expertise & approach, solutions and strategic global partnership</span> helps the clients in expanding ditigal footprint worldwide, digital transformation, adaption of cutting edge technologies, going greener, and makes <span class="dtmtOrange" style="font-size:700;"> Datamato the most preferred technology partner.</span>.
+					</p>
+				 </div>
+		
 
-<!-- section -->
-<section class="pt-5" style="min-height:350px;background:yellow;">
-	<div class="content-section mt-5" style="" >
-          <div data-aos="zoom-in"> 
-			<h1 class="big">First slide label</h1>
-			<p>Some representative placeholder content for the first slide.</p>
-          </div>
-		 
-	</div> <!-- container-section -->
-</section>
+			</div> <!-- container-section -->
+		</div>
+	</section>
+	
+	<!-- Expertise and Solutions -->
+	<section class="" style="min-height:350px;background-color: #efefc9">
+		<!-- By pradeep mt-5 to mt-0  -->
+		<div class="container sectionMargins">
+			<div class="row content-section ">
+				<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+					<p class="subHL subHLSmall dtmtGray mb-2">Delighting customers</p>
+					<h1 class="big mb-4">Our Expertise & Approach</h1>
+					<p class="body" style="color: #4f4f4f; font-size:22px;">
+					15 years of mastering every nuisance of SDLC, automation, infrastructure, security and emerging technologies. This combined with our unique approach to simplify IT systems has helped enterprises with <span class="multicolortext_1" style="font-weight:bold;">maximum ROI, faster go to markets & significant quantifiable saving</span> year after year. 
+					
+					</p>
+				 </div>
+			</div> <!-- row container-section -->
+			<div class="row mt-5 p-5 d_expert_approach_cards g-0" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="100" style="background-color:#73a59c;">
+				<div class="col-md-6 m0 order-2 order-sm-2 order-md-1 order-lg-1 " style="min-height:40vh;">
+					<div class="card h-100 noBorder">
+						<div class="card-body">
+							<p class="subHL subHLSmall dtmtBlue fw-bold">Expertise</p>
+							<p class="body">Full spectrum of DevSecOps solutions, automated security processes, eco-friendly data center, unified development platforms, and innovative product development. <span class="fw-bold">The aim is to deliver  efficient, secure, and sustainable technology solutions that expands client's digital transformation & footprint.
+							</span></p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 order-1 order-sm-1 order-md-2 order-lg-2 ">
+					<div class="card h-100 bg-image noBorder" style="background-image: url(images/bgWatch.png);min-height:40vh;">
+						<div class="card-body">
+							<h5 class="card-title"> </h5>
+							<p class="card-text"> </p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- second column row APPROACH -->
+				
+				<div class="col-md-6 m0 order-3 order-sm-2 order-md-3 order-lg-3  ">
+					<div class="card h-100  bg-image noBorder" style="background-image: url(images/bgCoffeeMaking.png);min-height:40vh;">
+						<div class="card-body">
+							<h5 class="card-title"></h5>
+							<p class="card-text"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 order-4 order-sm-1 order-md-4 order-lg-4" style="min-height:40vh;">
+					<div class="card noBorder h-100">
+						<div class="card-body">
+							<p class="subHL subHLSmall dtmtBlue fw-bold">APPROACH</p>
+							<p class="body">Each business is unique. So is our approach.</p>
+							<!-- <p class="body">But what remains common is understanding requirements, meticulous planning, POC, demos, deliberations, and best of breed products, solutions & services. No unnecessary products or solution sales. <span class="fw-bold">Afterall in last decade Datamato has been retained 85% of time.</span>
+							</p> -->
+							<ul class="list-group mb-4">
+							<li class="list-group-item  border-0">
+								<i class="bi bi-check-circle"></i>
+								Deploying multiple teams.
+							</li>
+							<li class="list-group-item  border-0">
+								<i class="bi bi-check-circle"></i>
+								Discovery & requirements.
+							</li>
+							<li class="list-group-item  border-0">
+								<i class="bi bi-check-circle "></i>
+								Meticulous planning, POC and demos.
+							</li>
+							<li class="list-group-item  border-0">
+								<i class="bi bi-check-circle"></i>
+								Solution deliberations.
+							</li>
+							<li class="list-group-item  border-0">
+								<i class="bi bi-check-circle"></i>
+								Best of breed products, solutions & services.
+							</li>
+							<li class="list-group-item  border-0">
+								<i class="bi bi-check-circle"></i>
+								No unnecessary products or solution sales.
+							</li>
+						</ul>
+						<p class="body "><span class="dtmtPink fw-bold">Afterall in last decade Datamato has been retained 85% of time.</span></p>
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- SOLUTIONS -->
+	<section class="" style="min-height:350px;background-color: #fbf5f54f;">
+		<!-- By pradeep mt-5 to mt-0  -->
+		<div class="container sectionMargins">
+			<div class="row d_content_section text-center " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+					<p class="subHL subHLSmall dtmtGray mb-2" >Helping business deliver values</p>
+					<h1 class="big mb-4">Our solutions</h1>
+					<p class="body" style="color: #4f4f4f;font-size:22px;">
+					We offer combination of digital transformation, legacy & modern application development, app modernization, APM, ELM, observability and sustainability solutions. 
+					</p>
+
+			</div>
+				 <!-- product card -->
+			<div class="row mt-5 justify-content-center 2 " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="200">
+			    <!-- 360 DevSecOps-->
+				<div class="col-lg-4 col-sm-5">
+					<div class="product-card mx-1 my-5">
+						<i class="bi bi-shield-check icon"></i>
+						<div class="headline" style="font-size: 1.2rem;" >360° DevSecOps Consulting</div>
+						<div class="body-text">Secure SDLC at every stage. Key features:</div>
+						<ul class="list-group mb-4">
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									One Touch Provisioning
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									CI/CD, Artifact Management
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									 Infrastructure as Code (IaC)
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i> 
+									DAST & SAST
+								</li>
+						</ul>
+						  <a href="#" class="text-success mt-3 d-inline-flex align-items-center">
+							<span class="mx-3">Read More</span> <i class="bi bi-arrow-right ml-4"></i>
+						</a>
+					</div>
+				</div>
+				<!-- development -->
+				<div class="col-lg-4 col-sm-5">
+					<div class="product-card mx-1 my-5">
+					<i class="bi bi bi-code-slash icon"></i>
+					<div class="headline" style="font-size: 1.2rem;">Integrated Development</div>
+					<div class="body-text">Just code business, rest built in.</div>
+					<ul class="list-group mb-4">
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									JWTs & OAuth2.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									Notifications % ticketing
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									Microservices & monolithic.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									Integrated CI/CD.
+								</li>
+								
+						</ul>
+						  <a href="#" class="text-success mt-3 d-inline-flex align-items-center">
+							<span class="mx-3">Read More</span> <i class="bi bi-arrow-right ml-2"></i>
+						</a>
+						</div>
+				</div>
+
+				<!-- sustainability -->
+				<div class="col-lg-4 col-sm-5">
+					<div class="product-card mx-1 my-5">
+					<i class="bi bi-recycle icon"></i>
+					<div class="headline" style="font-size: 1.2rem;">Sustainability solution</div>
+					<div class="body-text">Meet emission regulatory & responsibility.</div>
+					<ul class="list-group mb-4 text-start">
+								<li class="list-group-item  border-0 ">
+									<i class="bi bi-check-circle"></i>
+									Single dashboard.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									All CO2 footprint visualization.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									Net Zero operations.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									ESG reporting.
+								</li>
+						</ul>
+						  <a href="#" class="text-success mt-3 d-inline-flex align-items-center">
+							<span class="mx-3">Read More</span> <i class="bi bi-arrow-right ml-2"></i>
+						</a>
+						</div>
+				</div>
+
+				<!-- DO + -->
+				<div class="col-lg-4 col-sm-5">
+					<div class="product-card mx-1 my-5">
+					<i class="bi bi-cloud-upload icon"></i>
+					<div class="headline" style="font-size: 1.2rem;">DevOps Plus</div>
+					<div class="body-text">Post deployment integration & flows</div>
+					<ul class="list-group mb-4 text-start">
+								<li class="list-group-item  border-0 ">
+									<i class="bi bi-check-circle"></i>
+									Centralize one portal.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									Make flows, deploy anywhere.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									Reuse integrations across environments.
+								</li>
+								<li class="list-group-item  border-0">
+									<i class="bi bi-check-circle"></i>
+									Reuse across environments.
+								</li>
+						</ul>
+						  <a href="#" class="text-success mt-3 d-inline-flex align-items-center">
+							<span class="mx-3">Read More</span> <i class="bi bi-arrow-right ml-2"></i>
+						</a>
+						</div>
+				</div>
+				
+				
+			</div>
+				 <!-- product card ends -->  
+		</div>
+	</section>
+	
+
+<!-- Global partnersip -->
+	<section class="" style="min-height:350px;    background-color: #051529;
+    color: white;">
+		<!-- By pradeep mt-5 to mt-0  -->
+		<div class="container sectionMargins text-center">
+			<div class="row d_content_section" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
+				<!-- Products from Global Leaders -->
+					<p class="subHL subHLSmall mb-2" >Always at the forefront.</p>
+					<h1 class="big mb-4">Global Strategic Partnership</h1>
+					<p class="body" style="font-size:23px;">
+					DevOps, cloud computing, AI/ML and enterprise softwares, our partnerships cover everything for complex global business challenges & to meet your CO2 emission target. <span class="fw-bold">Easily navigate</span> digital transformation and access the latest cutting edge technologies in software development and IT management.
+					</p>
+			</div>
+					
+				<div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 my-4" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="2000">
+					<div class="col">
+						<div class="card-partnership aos-init aos-animate" data-aos="fade-right">
+							<img src="./images/1.png" class="card-partnership-img-top" alt="Image 1">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init aos-animate" data-aos="fade-right">
+							<img src="./images/2.png" class="card-partnership-img-top" alt="Image 2">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init aos-animate" data-aos="fade-left">
+							<img src="./images/3.png" class="card-partnership-img-top" alt="Image 3">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init" data-aos="fade-left">
+							<img src="./images/4.png" class="card-partnership-img-top" alt="Image 4">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init" data-aos="fade-left">
+							<img src="./images/5.png" class="card-partnership-img-top" alt="Image 5">
+						</div>
+					</div>
+				</div>
+	
+		
+		
+
+			<!-- container-section -->
+		</div>
+	</section>
+
+<!-- CLIENTS -->
+	<section class="" style="min-height:350px; ">
+		<!-- By pradeep mt-5 to mt-0  -->
+		<div class="container sectionMargins text-center">
+			<div class="row d_content_section" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800"data-aos-delay="100" >
+				<!-- Products from Global Leaders -->
+					<h1 class="big mb-4">CLIENTS</h1>
+					<p class="body" style="font-size:23px;">
+					Cloud service providers, OTT players, banking & other high demanding industries trust us to manage applications, infrastructure automation, digital transformation and sustainability compliances.
+					</p>
+			</div>
+					
+				<div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 my-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+					<div class="col">
+						<div class="card-partnership aos-init aos-animate" data-aos="fade-right">
+							<img src="./images/1.png" class="card-partnership-img-top" alt="Image 1">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init aos-animate" data-aos="fade-right">
+							<img src="./images/2.png" class="card-partnership-img-top" alt="Image 2">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init aos-animate" data-aos="fade-left">
+							<img src="./images/3.png" class="card-partnership-img-top" alt="Image 3">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init" data-aos="fade-left">
+							<img src="./images/4.png" class="card-partnership-img-top" alt="Image 4">
+						</div>
+					</div>
+					<div class="col">
+						<div class="card-partnership aos-init" data-aos="fade-left">
+							<img src="./images/5.png" class="card-partnership-img-top" alt="Image 5">
+						</div>
+					</div>
+				</div>
+	
+		
+		
+
+			<!-- container-section -->
+		</div>
+	</section>
+	
+<!-- CASE STUDIES -->
+	<section class="" style="min-height:350px;  background-color: #efefc9;">
+		<div class="container sectionMargins">
+			<div class="row mb-4">
+			    <p class="subHL subHLSmall dtmtGray mb-2" >Delivering across industries</p>
+				<h1 class="big mb-4">Case Studies</h1>
+				<p class="body" style="color: #4f4f4f;font-size:23px;">Please check below how our proven approach, espertise, and technology partnerships <span class="multicolortext_2">keep business running with measurable automation, revenue impacts and quantifiable results.</span></p>
+			</div>
+			<div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 justify-content-center" style="overflow-y: hidden" >
+				<div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+					<div class="card ourcasestudyclassbox h-100">
+						<img src="./images/manufacturing.jpg" class="card-img-top" alt="..."
+							style="height: 200px; object-fit: cover;">
+						<div class="card-body">
+							<p class="subHL subHL cardHL dtmtBlack mb-4">Manufacturing</h5>
+							<p style="card-text">DevOps
+								Automation Reduces Time-to-Market
+								for Manufacturing Company by
+								65%</p>
+							<a href="#" style="font-weight: 500;" class="astylecasestudie">Know more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col" data-aos="fade-up" data-aos-delay="350" data-aos-duration="600">
+					<div class="card ourcasestudyclassbox h-100" >
+						<img src="./images/banking.jpg" class="card-img-top" alt="..."  style="height: 200px; object-fit: cover;">
+							<div class="card-body">
+								<p class="subHL subHL cardHL dtmtBlack mb-4">Banking</h5>
+								<p style="card-text">Enterprise Solution Provider Partnership Drives Efficiency for Leading Indian Bank.</p>
+								<a href="#" style="font-weight: 500;" class="astylecasestudie">Know more</a>
+							</div>
+					</div>
+				</div>
+
+				   <div class="col" data-aos="fade-up" data-aos-delay="650" data-aos-duration="700"">
+					  <div class="card ourcasestudyclassbox h-100" >
+						<img src="./images/retail.jpg" class="card-img-top" alt="..."
+							style="height: 200px; object-fit: cover;">
+						<div class="card-body">
+							<p class="subHL subHL cardHL dtmtBlack mb-4">Retail</h5>
+							<p style="card-text">CI/CD
+								Implementation Reduces Manual Task Costs by 30% for Innovative
+								Retail Solution Platform</p>
+							<a href="#" style="font-weight: 500;" class="astylecasestudie">Know more</a>
+						</div>
+					</div>
+				</div> <!-- row -->
+			</div>
+
+			<div class="container d_form_container rectangle p-5" style="width:70%; margin-top:80px;margin-bottom:30px;">
+				<div class="row dtmtWhite text-center justify-content-center " style="">
+					<h1 class="big mb-2" style="font-size: 4.1vw; font-family: 'NUNITO';" >Let's get started</h1>
+					<p class="body " style="font-size:23px;">Tell us about you. We will get back within a working day.</span></p>
+				</div>
+				<!-- CONTACT FORM -->
+				<div class="row my-5 justify-content-center  ">
+				<div class="col-9">
+				<form id="contactForm" class="needs-validation " novalidate>
+					<div class="row">
+					  <div class="col-md-6 mb-3">
+						<label for="name" class="form-label">Name</label>
+						<input type="text" class="form-control" placeholder="Enter your name" id="name" required>
+						<div class="invalid-feedback">
+						  Please enter your name.
+						</div>
+					  </div>
+					  <div class="col-md-6 mb-3">
+						<label for="email" class="form-label">Email</label>
+						<input placeholder="Enter official email" type="email" class="form-control" id="email" required>
+						<div class="invalid-feedback">
+						  Please enter a valid email address.
+						</div>
+					  </div>
+					  <div class="col-md-6 mb-3 ">
+						<label for="subject" class="form-label">Company Name</label>
+						<input placeholder="Enter organization name" type="text" class="form-control" id="companyName" required>
+						<div class="invalid-feedback">
+						  Please enter a subject.
+						</div>
+					  </div>
+					  <div class="col-md-6 mb-3">
+						<label for="subject" class="form-label">Mobile Number</label>
+						<input placeholder="Enter your mobile" type="number" class="form-control" id="mobile" required>
+						<div class="invalid-feedback">
+						  Please enter a mobile number.
+						</div>
+					  </div>
+					   <div class="col-md-6 mb-3">
+						<label for="subject" class="form-label">Website</label>
+						<input placeholder="Enter website address" type="text" class="form-control" id="website" required>
+						<div class="invalid-feedback">
+						  Please enter your company's website.
+						</div>
+					  </div>
+					  <div class="col-md-6 mb-3">
+						<label for="reason" class="form-label">Reason for Contact</label>
+						<select class="form-select" id="reason" name="reason" required>
+						  <option value="" disabled selected>Select a reason</option>
+						  <option value="devops">DevOps</option>
+						  <option value="dev">Development</option>
+						  <option value="sust">Sustaibility</option>
+						  <option value="other">Other</option>
+						</select>
+						<div class="invalid-feedback">
+						  Please select a reason for contact.
+						</div>
+					  </div>
+					  <div class="col-md-12 mb-3">
+						<label for="message" class="form-label">Additional Information</label>
+						<textarea placeholder="Any extra information" class="form-control" id="message" rows="4" required></textarea>
+						<div class="invalid-feedback">
+						  Please enter any other information you would like us to know.
+						</div>
+					  </div>
+					   <div class="d-flex justify-content-center">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					  </div>
+				  </div> <!-- row -->
+				</form>
+				</div>
+			  </div>
+			</div> <!-- d_form_container -->
+
+	</section>
+
 <!-- Footer 3 -->
 
-<footer class="footer_3 bg-light pt-100 pb-100 text-center text-lg-left">
-	
+<footer class="bg-dark text-light py-4">
+    <div class="container-fluid">
+        <div class="row d-flexjustify-content-center">
+            <div class="col-md-4 p-4 " style="background: #ffffff2e;">
+				<div class=" " style="margin-left: 30px;">
+				  <img src="images/dmlogo.png" alt="Logo" width="150" height="24" >
+				  <p class="mt-3 body">Empowering businesses with innovative solutions.</p>
+				</div>
+			</div>
+		<div class="col-md-8">
+			<div class="d-flex justify-content-center p-3">
+			  <div class="col-md-6">
+				<div class="row">
+					<h5 class="w-75 justify-content-center mb-4 text-center">COMPANY</h5>
+					<div class="col">
+					  <ul class="list-unstyled">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Solutions</a></li>
+						<li><a href="#">Case Studies</a></li>
+						<li><a href="#">Partnerships</a></li>
+						<li><a href="#">Clients</a></li>
+					  </ul>
+					</div>
+					<div class="col">
+					  <ul class="list-unstyled">
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Contact</a></li>
+					  </ul>
+					</div>
+				  </div>
+				</div> <!-- MD6 -->
+				<div class="col-md-3">
+				  <h5 class="mb-4 "><i class="bi bi-geo-alt icon"></i> Locations</h5>
+				  <ul class="list-unstyled">
+					<li><i class="bi bi-dot"></i> Pune, INDIA</li>
+					<li><i class="bi bi-dot"></i> xxxxx, USA</li>
+					<li><i class="bi bi-dot"></i> London, UK</li>
+					<li><i class="bi bi-dot"></i> Dubai, UAE</li>
+				  </ul>
+				</div>
+			</div> <!-- d-flex -->	
+			</div> <!-- col 8 -->
+        </div>
+		<!-- social media and copyright -->
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+				<a href="https://www.facebook.com/DatamatoTechnologies" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-light me-3"><i class="bi bi-facebook"></i></a>
+                <a href="https://x.com/Datamato" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-light me-3"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/_datamato_/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-light me-3"><i class="bi bi-instagram"></i></a>
+			
+                <a href="https://www.linkedin.com/company/datamatotechnologies" target="_blank"  class="text-decoration-none text-light me-3"><i class="bi bi-linkedin"></i></a>
+                <p class="mt-3">&copy; 2023 Datamato Technologies Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap 5.3.3 -->
@@ -215,4 +787,13 @@
 <script>
   AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+		
+<script>
+    $(document).ready(function() {
+      $("#contactForm").validate();
+    });
+  </script>
+  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js">
 </body>

@@ -1,0 +1,39 @@
+file:///D:/work/datamato/website/dtmt-bs-gh/index.html#
+
+<subHL{
+		 line-height: 1.2;
+		 opacity:0.9;
+	 }
+
+
+@media (max-width: 575.98px) {
+	
+}
+
+/* 1. Small (sm)  but horizontal 
+576px and greater screen sizes use small breakpoints. Ex- mobiles. The media query breakpoint syntax –
+*/
+@media only screen and (min-width: 576px) {
+	
+}
+
+/* 2. Medium (md)
+768px and greater screen sizes use the medium breakpoints. Ex-tablets.  Syntax below 
+*/
+ @media only screen and (min-width: 768px) {
+	
+ }
+ 
+/* 3. Large (lg) - desktop or pad (vertical)
+992px and greater screen sizes use the large breakpoints. Ex- laptops. Syntax –
+*/
+ @media only screen and (min-width: 992px) {
+	
+ }
+ 
+/* 4. Extra-large (xl)
+1200px and greater screen sizes use the extra-large breakpoints. Ex: Desktops. Syntax – 
+*/
+@media only screen and (min-width: 1200px) {
+	
+}
